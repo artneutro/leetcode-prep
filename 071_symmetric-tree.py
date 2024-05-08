@@ -24,8 +24,7 @@ class Solution:
         return root
     # Check if a tree is symmetric on its root using the previous 2 definitions
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
-        if root != None :
-            if self.isSameTree(self.invertTree(root.left), root.right) :
-                return True
+        if self.isSameTree(self.invertTree(root.left), root.right) :
+            return True
         return False
         
