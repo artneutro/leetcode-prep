@@ -6,6 +6,7 @@
 #         self.left = left
 #         self.right = right
 class Solution:    
+    # Check if 2 trees are the same
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         if p != None and q != None :
             if p.val == q.val :
@@ -16,10 +17,12 @@ class Solution:
             return True
         else :
             return False
+    # Mirror a tree using its root
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         if root != None :
             root.left, root.right = self.invertTree(root.right), self.invertTree(root.left)
         return root
+    # Check if a tree is symmetric on its root using the previous 2 definitions
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
         if root != None :
             if self.isSameTree(self.invertTree(root.left), root.right) :
