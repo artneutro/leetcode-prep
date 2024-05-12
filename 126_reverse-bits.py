@@ -2,6 +2,7 @@
 class Solution:
     def reverseBits(self, n: int) -> int:
         # Convert to binary 
+        # Convert to string
         # Remove the '0b' part
         # Fill with leading '0' up to 32 bits
         # Reverse
