@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/triangle/
 class Solution:
     def recursiveTotal(self, triangle: List[List[int]], cumulative: List[int]) -> int:
-        # If the triangle is finished return the minimum acummulative
+        # If the triangle is finished return the minimum accumulated
         if len(triangle) == 0 :
             return min(cumulative)
         # Else recursively get min sum of each next element with related cumulatives
