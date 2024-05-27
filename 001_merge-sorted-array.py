@@ -10,7 +10,7 @@ class Solution:
         nums2_ptr = 0
         # Loop to insert all elements from array2 to array1
         while (nums2_ptr < n) :
-            # Look for next bigger number to insert in current index of pointer1
+            # Look for next bigger number to insert in current index of pointer1 
             if nums1[nums1_ptr] <= nums2[nums2_ptr] and nums1_ptr < m+nums2_ptr: 
                 nums1_ptr += 1
             else :
