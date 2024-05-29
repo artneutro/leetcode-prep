@@ -25,18 +25,15 @@ class Solution:
                 list2 = list2.next
         # Iterate over the 2 lists until one ends
         while list1 != None and list2 != None :
+            new_node = ListNode()
             if list1.val <= list2.val :
-                new_node = ListNode()
                 new_node.val = list1.val
                 list1 = list1.next
-                solution.next = new_node
-                solution = solution.next
             else :
-                new_node = ListNode()
                 new_node.val = list2.val
                 list2 = list2.next
-                solution.next = new_node
-                solution = solution.next
+            solution.next = new_node
+            solution = solution.next
         # Add the remainder items
         if list1 == None :
             solution.next = list2
