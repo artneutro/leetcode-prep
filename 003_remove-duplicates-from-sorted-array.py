@@ -4,6 +4,7 @@ class Solution:
         i = 1
         cur = len(nums)
         while i<cur:
+            # If duplicate found, remove it
             if nums[i-1] == nums[i] :
                 del nums[i-1]
                 cur = len(nums)
