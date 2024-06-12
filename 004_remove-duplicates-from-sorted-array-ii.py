@@ -2,6 +2,7 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         cur = len(nums)
+        # Base cases
         if cur == 1 or cur == 2 :
             return len(nums)
         i = 1
