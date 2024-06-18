@@ -3,6 +3,7 @@ class Solution:
     def majorityElement(self, nums: List[int]) -> int:
         checked = {}
         i = 0
+        # Structure to store the majority value and the repetitions
         majority = [0,0]
         while (i<len(nums)) :
             if nums[i] in checked :
