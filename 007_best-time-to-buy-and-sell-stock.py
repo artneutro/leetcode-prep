@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        # Base case
+        # Base cases
         if len(prices) == 1 :
             return 0
         max_profit = 0
