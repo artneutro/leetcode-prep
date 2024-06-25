@@ -15,6 +15,7 @@ class Solution:
         # Case [1]
         if len(sorted_citations) == 1 :
             return 1
+        # Iterate over the values
         while (index >= 0) :
             cur_h = sorted_citations[index]
             # Case [1,1]
