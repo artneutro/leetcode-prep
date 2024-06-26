@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/insert-delete-getrandom-o1/
 class RandomizedSet:
-
+    # Use the random package
     import random
 
     def __init__(self):
