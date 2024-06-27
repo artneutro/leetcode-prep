@@ -1,6 +1,7 @@
 # https://leetcode.com/problems/roman-to-integer/
 class Solution:
     def romanToInt(self, s: str) -> int:
+        # Iterate over the Roman digits and follow the transformation rules
         count = 0
         index = 0
         while index < len(s):
