@@ -30,4 +30,4 @@ class LRUCache:
             key = self.priority.pop(0)
             del self.cache[key]
 
-# ~O(1) get and put using hash table
+# ~O(1) get and put using hash table although there could be a double linked list instead of array
