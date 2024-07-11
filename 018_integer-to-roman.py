@@ -1,6 +1,7 @@
 # https://leetcode.com/problems/integer-to-roman/
 class Solution:
     def intToRoman(self, num: int) -> str:
+        # Go for each position and convert following the rules.
         year = str(num)
         answer = ''
         # 1 
