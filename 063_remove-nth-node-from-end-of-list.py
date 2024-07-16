@@ -19,7 +19,6 @@ class Solution:
             # Tail element
             solution = ListNode(array_list[index])
             index -= 1
-            head = solution
             # Rest of elements
             while index >= 0 :
                 new_node = ListNode(array_list[index])
