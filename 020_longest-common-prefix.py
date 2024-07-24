@@ -30,10 +30,8 @@ class Solution:
                     longest = strs[index][:internal_index]
                 elif len(longest) > internal_index :
                     longest = strs[index][:internal_index]
-            print("AFTER INTERNAL", index, internal_index, longest, strs[index][:internal_index])
             # Case first and second elements are differents since char 0
             if internal_index == 0 :
                 return ''
             index = index+1
         return longest
-
