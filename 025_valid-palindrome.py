@@ -15,6 +15,7 @@ class Solution:
             # Check equality
             if s[ini] != s[end] :
                 return False
+            # Otherwise, continue
             else :
                 ini = ini+1
                 end = end-1
