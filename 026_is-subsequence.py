@@ -1,6 +1,7 @@
 # https://leetcode.com/problems/is-subsequence/
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
+        # Use 2 pointers to iterate over once a match is found
         s_index = 0
         t_index = 0
         while s_index < len(s) and t_index < len(t) :
