@@ -71,5 +71,5 @@ class Solution:
             column_index = 0
             # Reset column_phase when reach last
             column_phase = 0
+        # Return True only if all checks are correct
         return True
-
