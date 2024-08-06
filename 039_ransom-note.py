@@ -21,6 +21,6 @@ class Solution:
             else :
                 return False
             index += 1
+        # Return True only after all checks passed
         return True
-
-
+        
