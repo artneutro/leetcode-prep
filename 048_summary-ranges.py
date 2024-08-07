@@ -1,5 +1,6 @@
 # https://leetcode.com/problems/summary-ranges/
 class Solution:
+    # Could split in several def, but just left it for continuity
     def summaryRanges(self, nums: List[int]) -> List[str]:
         # Case no elements, return same empty set
         if len(nums) == 0 :
