@@ -5,10 +5,12 @@ class Solution:
         check = []
         # Use a stack to check the correctness
         while index < len(s) :
+            # When open, then push
             if s[index] == '(' \
             or s[index] == '{' \
             or s[index] == '[' :
                 check.append(s[index])
+            # When close, then pop and check
             elif len(check) != 0 and s[index] == ')' :
                 if check[-1] == '(' :
                     check.pop()
