@@ -7,6 +7,7 @@
 
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
+        # List of visited nodes
         visited = []
         while (head) : 
             # Store the object address (not the value), as there could be repeated values
