@@ -8,6 +8,7 @@
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         if p != None and q != None :
+            # Recursively check if the root is the same and also left and right children
             if p.val == q.val :
                 return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
             else :
