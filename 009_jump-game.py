@@ -1,5 +1,6 @@
 # https://leetcode.com/problems/jump-game/
 class Solution:
+    # There is an option checking max of (current index + current index val) sub-array, but it has a bug, so for now this is my solution
     def canJump(self, nums: List[int]) -> bool:
         # Hashtable for quick look
         nexts = {}
