@@ -22,9 +22,9 @@ class Solution:
         # Otherwise, construct recursively the 4 matrix sections
         else :
             top_left = self.construct([line[:int(len(grid)/2)] for line in grid[0:int(len(grid)/2)]])
-            top_righ = self.construct([line[int(len(grid)/2):int(len(grid))] for line in grid[0:int(len(grid)/2)]])
-            bot_left = self.construct([line[:int(len(grid)/2)] for line in grid[int(len(grid)/2):int(len(grid))]])
-            bot_righ = self.construct([line[int(len(grid)/2):int(len(grid))] for line in grid[int(len(grid)/2):int(len(grid))]])
+            top_righ = self.construct([line[int(len(grid)/2):len(grid)] for line in grid[0:int(len(grid)/2)]])
+            bot_left = self.construct([line[:int(len(grid)/2)] for line in grid[int(len(grid)/2):len(grid)]])
+            bot_righ = self.construct([line[int(len(grid)/2):len(grid)] for line in grid[int(len(grid)/2):len(grid)]])
             # If all 4 sections are same, return the comprised Node
             if top_left.val == top_righ.val\
             and top_righ.val == bot_left.val\
@@ -39,4 +39,3 @@ class Solution:
             # Case where one or more sub-matrixes are different
             else :
                 return Node(-1, False, top_left, top_righ, bot_left, bot_righ)
-
