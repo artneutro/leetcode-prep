@@ -30,3 +30,5 @@ class LRUCache:
             key = self.priority.pop(0)
             del self.cache[key]
 
+# Perhaps a better solution is to use linked list instead
+
