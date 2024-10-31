@@ -1,8 +1,6 @@
 # https://leetcode.com/problems/generate-parentheses/
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
-        if n == 1 :
-            return ['()']
         solution = {}
         # Queue with elements [string, total_left_par, total_right_par, open_left_par]
         queue = []
